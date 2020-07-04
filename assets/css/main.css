@@ -4610,6 +4610,9 @@
 	select option {
 		font-size: 8px;
 	}
+	.wrapper > .inner {
+		width: 100%;
+	}
 
 
 }
