@@ -7,6 +7,30 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.975);
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    text-decoration: none;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #fff;
+    color: #000;
+}
 
 /* Reset */
 
@@ -4619,6 +4643,7 @@
 .banner2{
 	background-image: url(../../images/bg.jpg);
 	margin-bottom: 20px;
+
 }
 .banner2 h1{
 	text-align: center;
