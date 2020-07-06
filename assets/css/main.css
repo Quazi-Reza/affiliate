@@ -32,9 +32,11 @@
     color: #000;
 }
 
+
+
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,  label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -2083,9 +2085,9 @@
 				background-color: #793d70;
 			}
 
-/* Form */
+/*  */
 
-	form {
+	 {
 		margin: 0 0 2rem 0;
 	}
 
@@ -3028,7 +3030,7 @@
 			.wrapper.style2 input[type="email"],
 			.wrapper.style2 select,
 			.wrapper.style2 textarea {
-				background: rgba(0, 0, 0, 0.075);
+				background: white;
 				border-color: rgba(0, 0, 0, 0.15);
 			}
 
@@ -4649,4 +4651,30 @@
 	text-align: center;
 
 }
+.divnav{
+	border: 5px #fff solid;
+	overflow: hidden;
+	background-color:#000;
+}
+
+.divnav a {
+	float: left;
+	color: #fff;
+	text-align: center;
+	padding: 10px 14px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.divnav a:hover {
+	text-decoration: none;
+	background-color: #fff;
+	color: #000;
+}
+
+.divnav a.active {
+	background-color: #fff;
+	color: #000;
+}
+
 
