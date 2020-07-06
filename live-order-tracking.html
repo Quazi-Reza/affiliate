@@ -41,9 +41,9 @@
                 </header>
                 <div >
                     <ul class="nav nav-tabs">
-                        <li class="li-active"><a href="reports.html">Traffic Report</a></li>
+                        <li ><a href="reports.html">Traffic Report</a></li>
                         <li><a href="income-report.html">Income Report</a></li>
-                        <li><a href="live-order-tracking.html">Live Order Tracking</a></li>
+                        <li  class="li-active" ><a href="live-order-tracking.html">Live Order Tracking</a></li>
                     </ul>
                     <div class="tab-content">
                         <div id="traffic-report">
@@ -51,9 +51,9 @@
                                 <div class="container">
                                     <div class="row banner2">
                                         <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-12">
-                                            <h1 class="text-light">Traffic Report</h1>
+                                            <h1 class="text-light">Live Order Tracking</h1>
                                         </div>
-                                     </div>
+                                    </div>
                                     <div class="row">
                                         <div class="form-group col-md-3 col-xl-3 col-lg-3 col-sm-3 col-3">
                                             <label for="from">From</label>
@@ -138,72 +138,62 @@
                                                 <option value="">Incidunt!</option>
                                             </select>
                                         </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-6 col-xl-6">
+                                            <label for="orderId">Order ID</label>
+                                            <input type="text" class="form-control" id="orderId">
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-6 col-xl-6">
+                                            <label for="orderStat">Order Status</label>
+                                            <select id="orderStat"  class="custom-select">
+                                                <option value="">All</option>
+                                                <option value="">Completed</option>
+                                                <option value="">Running</option>
+                                            </select>
+                                        </div>
                                         <div class="col-12">
                                             <a href="#" class="btn btn-warning" style="margin-left: 90%">View Report</a>
+                                            <a href="#" class="btn btn-warning" style="margin-top: 5px;margin-left: 90%">Export</a>
                                         </div>
-                                        </div>
+                                    </div>
                                     <hr>
                                     <div class="row" style="padding: 10px">
-                                        <table class="data-table total-report-table" width="100%">
+                                        <table class="data-table order-status-table" width="100%">
                                             <thead>
                                             <tr>
-                                                <td colspan="6" class="text-center"><h3>Total</h3></td>
-                                            </tr>
-                                            <tr>
-                                                <th class="t-3" data-spm-anchor-id="portals._report_flowsEffect.0.i0.21272fe0KwwJGr">Platform</th>
-                                                <th class="t-1">Tracking ID</th>
-                                                <th class="t-2">Country</th>
-                                                <th class="t-3">PV</th>
-                                                <th class="t-3">Cookie</th>
-                                                <th class="t-4">Bounce rate</th>
+                                                <th class="t-1" data-spm-anchor-id="portals._report_liveOrders.0.i1.1fec2fe0g2lztl">Order Time</th>
+                                                <th class="t-2">Transaction Time</th>
+                                                <!-- 20191009应运营要求增加一列，展示父订单 -->
+                                                <th class="t-3" style="width: 12%;">Order ID </th>
+                                                <th class="t-3" style="width: 12%;">Sub Order ID</th>
+                                                <th class="t-11">Product</th>
+                                                <th class="t-5">Order Status</th>
+                                                <th class="t-6">Commission Rate</th>
+                                                <th class="t-7">
+                                                    New Buyer Bonus<b id="qm-newbuyer-bonus" class="t-resolve-icon">
+                                                </b></th>
+                                                <th class="t-8">Payment Amount<b id="qm-pay-amount" class="t-resolve-icon"></b></th>
+                                                <th class="t-9">Estimated Commission</th>
+                                                <th class="t-10">Final Payment Amount<b id="qm-final-amount" class="t-resolve-icon"></b></th>
+                                                <th class="t-11">Commission<b id="qm-commission-txt" class="t-resolve-icon"></b></th>
+                                                <th class="t-11">Seller Type</th>
+
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>total</td>
-                                                <td>total</td>
-                                                <td>total</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>100%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PC</td>
-                                                <td>total</td>
-                                                <td>total</td>
-                                                <td>1</td>
-                                                <td>1</td>
-                                                <td>100%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mobile Site</td>
-                                                <td>total</td>
-                                                <td>total</td>
-                                                <td>1</td>
-                                                <td>1</td>
-                                                <td>100%</td>
-                                            </tr>
-                                            <tr>
-                                                <td>APP</td>
-                                                <td>total</td>
-                                                <td>total</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>0%</td>
-                                            </tr>
+                                            <tr><td class="no-result" colspan="11">No data</td></tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    </div>
+                                </div>
 
-                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
+    </div>
     </div>
 </section>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
